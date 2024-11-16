@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Actividad 2</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+    <!--PALINDROMO-->
+    <div class="descripcion">
+        <h1>Palindromo</h1>
+        <p>
+            Detectar si la cadena de entrada en un palíndromo.
+        </p>
+
+
+        <div class="palindromo">
+            <legend><b>Palabra Palindromo</b></legend>
+            <input type="text" id="txtPalindromo" placeholder="Ingresa La Frase"/><input type="button" value="Detectar Palindromo" onclick="esPalindromo(document.getElementById('txtPalindromo').value);"/>
+        </div>
+    </div>
+
+    <!--saber si un numero es mayor que el otro-->    
+    <div class="descripcion">
+        <h1>Numero Mayor</h1>
+        <p>
+            Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.  
+        </p>
+
+
+        <div class="numeromayor">
+            <legend><b>Saber Numero Mayor</b></legend>
+            Numero 1:<input type="text" id="txtNum1" placeholder="Ingresa El Primer Numero" /> Numero 2:<input type="text" id="txtNum2" placeholder="Ingresa El Segundo Numero"/><input type="button" value="¿Es Mayor?" 
+            onclick="esMayor(document.getElementById('txtNum1').value, document.getElementById('txtNum2').value);" />
+        </div>
+    </div>
+    
+    <!--Saber las bocales que tiene una palabra-->
+    <div class="descripcion">
+        <h1>Vocales de una palabra</h1>
+        <p>
+            Escribe un programa que pida una frase y escriba las vocales que aparecen.
+        </p>
+
+
+        <div class="bocales">
+            <legend><b>Saber las bocales de una palabra</b></legend>
+            <input type="text" id="txtFrase" placeholder="Ingresa La Palabra"/><input type="button" value="Extraer vocales" onclick="mostrarVocales(document.getElementById('txtFrase').value);" />
+        </div>    
+    </div>
+
+    <!--Saber las vocales que tiene una palabra-->
+    <div class="descripcion">
+        <h1>Contador de vocales</h1>
+        <p>
+            Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales.
+        </p>
+
+
+        <div class="palabra">
+            <legend><b>Saber Cuantas Vocales Tiene Una Palabra</b></legend>
+            <input type="text" id="palabra" placeholder="Ingresa La Palabra"/><input type="button" value="Extraer Numero De Vocales" onclick="contarVocales(document.getElementById('palabra').value);" />
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <!--mostrar por defecto la URL de la propia pagina-->
+    <div class="descripcion">
+        <h1>URL de la pagina</h1>
+        <p>
+            Al cargar la página, el cuadro de texto debe mostrar por defecto la URL de la propia página
+        </p>
+
+
+        <div class="url">
+            <legend><b>URL De La Pagina</b></legend>
+            <input type="text" id="urlpagina"/>
+            <script>
+                document.getElementById('urlpagina').value = window.location.href;
+            </script>         
+        </div>
+    </div>
+
+    <!--ingresar url para saber el contenido-->
+    <div class="descripcionUrl">
+        <h1>URL</h1>
+        <p>
+            Al pulsar el botón Mostrar Contenidos, se debe descargar mediante peticiones AJAX el contenido correspondiente a la URL introducida por el usuario. El 
+            contenido de la respuesta recibida del servidor en se debe mostrar en la zona de Contenidos del archivo.
+        </p>
+
+
+        <div class="urlIngresada">
+            <legend><b>Contenido De La URL</b></legend>
+            <input type="text" id="url" placeholder="Escribe una URL aquí" style="width: 300px;">
+            <!-- Botón para realizar la petición AJAX -->
+            <button onclick="mostrarContenidos()">Mostrar Contenidos</button>
+            <!-- Sección para mostrar el contenido descargado -->
+            <div id="contenido" style="margin-top: 20px; border: 1px solid rgb(63, 167, 53); padding: 10px;">
+            <p>El contenido de la URL aparecerá aquí.</p>
+            </div>
+        </div>
+
+    <!--zona de estados-->
+        <div class="estado">
+            <h1>Estado</h1>
+            <p>
+                En la zona Estados de la petición se debe mostrar en todo momento el estado en el que se encuentra la petición (no iniciada, cargando, completada, etc.).
+            </p>
+            <!-- Sección para mostrar el estado de la petición -->
+            <div id="estado" style="margin-top: 20px; color: rgb(63, 167, 53);">
+                Estado de la petición: No iniciada
+            </div>
+        </div>
+
+    <!--Cabeceras HTTP-->
+        <div class="http" id="cabeceras" >
+            <h1>Cabeceras HTTP</h1>
+            <p>Mostrar el contenido de todas las cabeceras de la respuesta del servidor en la zona Cabeceras HTTP de la respuesta del servidor.</p>
+            <br>
+            <p  style="color: rgb(63, 167, 53); ">Las cabeceras aparecerán aquí.</p>
+        </div>
+
+    <!--Mostrar codigo y texto-->  
+        <div class="mostrar" id="codigoEstado">
+            <h3>Código de estado de la respuesta:</h3>
+            <p  style="color: rgb(63, 167, 53); ">El código de estado aparecerá aquí.</p>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

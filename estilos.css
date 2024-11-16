@@ -1,0 +1,161 @@
+body{
+    background-color: #FFEAC5;
+}
+
+
+/*estilo de la introduccion del texto*/
+input[type=text]{
+    background-color: #FFDBB5;
+    width: 250px;
+    padding: 4px;
+    margin: 3px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+
+/*estilo del boton*/
+input[type=button]{
+    background-color: #FFEAC5;
+    border: 2px solid #603F26;
+    border-radius: 10px;
+    box-shadow: 0 0 11px #FFDBB5;
+    font-weight: 800;
+}
+button{
+    background-color: #FFEAC5;
+    border: 2px solid #603F26;
+    border-radius: 10px;
+    box-shadow: 0 0 11px #FFDBB5;
+    font-weight: 800;
+}
+
+
+/*Descripcion del contenido*/
+div.descripcion{
+    background-color: #cfbea0;
+    padding: 31px;
+    margin-top: 10px;
+    display:grid;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+    margin: 10px;
+}
+div.descripcionUrl{
+    background-color: #cfbea0;
+    padding: 31px;
+    margin-top: 10px;
+    display:grid ;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+    margin: 10px;
+}
+
+
+/*estilo del fodo del div de palindromo*/
+div.palindromo{
+    background-color:#6C4E31;
+    text-align: center;
+    padding: 40px;
+    margin-top: 10px;
+    display: inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;  
+}
+
+
+/*Saber el numero mayor*/
+div.numeromayor{
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center;
+    float: right;
+}
+
+
+/*bocales*/
+div.bocales{
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+/*Numero de Vocales*/
+div.palabra{
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/*saber URL donde estamos*/
+div.url{
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+}
+
+
+/*Mostrar contenido de la URL*/
+div.urlIngresada {
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+}
+
+
+/*Zona de Estado*/
+div.estado{
+    background-color: #6C4E31;
+    padding: 10px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+}
+
+/*HTTP*/
+div.http{
+    background-color: #6C4E31;
+    padding: 10px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+}
+
+
+/*Mostrar texto y codigo*/
+div.mostrar{
+    background-color: #6C4E31;
+    padding: 40px;
+    margin-top: 10px;
+    display:inline-table;
+    border: 3px solid #603F26;
+    border-radius: 25px;
+    text-align: center; 
+}
